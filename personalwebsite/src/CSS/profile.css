@@ -1,6 +1,33 @@
-.profilePaper {
-	background-color:pink;
+.profileDiv {
+	background-color: #E0E0E0;
 	/*position: relative;*/
+	width: 100%;
+	display: inline-block;
+	/*margin: auto;*/
+	position: relative;
+	text-align: center;
+}
+
+.paragraph {
+	/*background-color: white;
+	display: inline;*/
+	width: 300px;
+	/*vertical-align: center;*/
+	/*font-family: 'Varela Round', sans-serif;*/
+
+}	
+
+.paragraphContainer {
+	display:inline-block;
+	vertical-align: top;
+	width:300px;
 	margin: auto;
-	width:340px;
+	padding: 190px 100px 40px 100px;
+	/*border: 10px solid black;*/
+}
+
+.paperContainer {
+	/*float:left;*/
+	/*margin: 10px auto;*/
+	display: inline-block;
 }
