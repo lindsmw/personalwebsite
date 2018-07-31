@@ -5,6 +5,7 @@ import Main from './Main';
 import NavBar from './Components/NavBar'
 import Profile from './Components/Profile'
 import Experience from './Components/Experience'
+import AltIntroduction from './Components/AltIntroduction'
 
 const theme = createMuiTheme({
   typography: {
@@ -21,6 +22,8 @@ class App extends Component {
       <div>
         <MuiThemeProvider theme={theme}>
         <NavBar />
+        <br />
+        <AltIntroduction />
         <br />
         <Profile />
         <br />

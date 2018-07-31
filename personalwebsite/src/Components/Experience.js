@@ -60,7 +60,7 @@ class Experience extends Component {
 				<Card className="jobcard" style={style.jobcard}>
 					<div style={style.detail} >
 					<CardMedia>
-						<img style={style.img} src="./favicon.ico" alt="stockmusic logo" />
+						<img style={style.img} src={require("../Images/stockmusic.png")} alt="stockmusic logo" />
 					</CardMedia>
 					<CardContent style={style.content}>
 						<Typography variant="headline" component="h1">
@@ -78,7 +78,7 @@ class Experience extends Component {
 				<Card className="jobcard" style={style.jobcard}>
 					<div style={style.detail} >
 					<CardMedia>
-						<img style={style.img} src="./favicon.ico" alt="microsoft logo" />
+						<img style={style.img} src={require("../Images/stockmusic.png")} alt="microsoft logo" />
 					</CardMedia>
 					<CardContent>
 						<Typography variant="headline" component="h1">

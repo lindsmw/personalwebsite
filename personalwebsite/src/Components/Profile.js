@@ -33,7 +33,7 @@ class Profile extends Component {
 				</Typography>
 				</div>
 				<Paper /*zDepth={3}*/ style={style.paper} square={false} className="paperContainer">
-					<img src="./favicon.ico" style={{width:'100%', height:'auto'}} alt="Meg Lindsay's face"/>
+					<img src={require("../Images/profile.JPG")} style={{width:'100%', height:'auto'}} alt="Meg Lindsay's face"/>
 				</Paper>
 				<div className="paragraphContainer">
 				<Typography variant="title" component="h1" >
