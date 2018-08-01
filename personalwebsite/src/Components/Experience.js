@@ -1,22 +1,24 @@
 import React, { Component } from 'react';
 import { Card, CardContent, CardMedia, CardHeader, Typography, GridList, GridListTile, Paper } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
+import styles from '../CSS/Experience.css';
 
 
 const style = {
 	jobcard: {
 		// maxWidth:710,
 		width: '46%',
-		height: 'auto',
-		marginTop: '1%',
-		marginLeft: '1%',
-		marginRight: '1%',
-		marginBottom: '1%',
+		height: '100%',
+		// marginTop: '1%',
+		// marginLeft: '1%',
+		// marginRight: '1%',
+		// marginBottom: '1%',
+		margin: '1%',
 		padding: '1%',
 		display: 'inline-block',
-		// background:'#E0F2F1',
+		background:'#E0F2F1',
 		verticalAlign: 'top',
-		raised: true, 
+		// raised: true, 
 	},
 	projectcard: {
 		maxWidth: 300,
@@ -33,10 +35,11 @@ const style = {
 		width: 'auto'
 	},
 	paper: {
-		width: 'auto', 
+		width: '100%', 
 		height: 'auto', 
-		padding: 20, 
+		marginBottom: '2%',
 		display: 'inline-block',
+		// textAlign: 'center'
 		// background: '#E0F2F1'
 	},
 	display3: {
@@ -98,6 +101,7 @@ class Experience extends Component {
 						</CardContent>
 					</div>
 				</Card>
+
 				<Card className="jobcard" style={style.jobcard}>
 					<div style={style.detail} >
 						<CardMedia>
@@ -114,17 +118,8 @@ class Experience extends Component {
 						</CardContent>
 					</div>
 				</Card>
-				{/*</GridListTile>
-				<GridListTile>*/}
-				{/*<Card >
-					<CardContent>
-						<Typography variant="headline" component="h2">
-						Background 2
-						</Typography>
-					</CardContent>
-				</Card>*/}
-				{/*</GridListTile>
-			</GridList>*/}
+			</Paper>
+			<Paper style={style.paper} square={true} className="experiencePaper" elevation={3}>
 				<Typography variant="display3" component="h1" style={style.display3}>
 					Projects
 				</Typography>
