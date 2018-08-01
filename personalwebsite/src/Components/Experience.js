@@ -4,12 +4,14 @@ import { Card, CardContent, CardMedia, CardHeader, Typography, GridList, GridLis
 
 const style = {
 	jobcard: {
-		maxWidth:700,
-		height: 300,
-		margin: 35,
+		maxWidth:710,
+		height: 250,
+		margin: 30,
 		padding: 20,
 		display: 'inline-block',
-		background:'#9E9E9E',
+		background:'#E0F2F1',
+		verticalAlign: 'top',
+		raised: true
 	},
 	projectcard: {
 		maxWidth: 300,
@@ -22,8 +24,8 @@ const style = {
 		display: 'flex'
 	},
 	img: {
-		width: 300,
-		height: 'auto'
+		height: 250,
+		width: 'auto'
 	},
 	paper: {
 		width: 'auto', 
@@ -36,11 +38,16 @@ const style = {
 		padding: 10,
 		textAlign: 'center',
 		borderBottom: '1px solid black',
-		marginTop: 20
+		marginTop: 0
 	},
 	media: {
 		width: 400,
 		height: 'auto'
+	}, 
+	content: {
+		paddingTop: 0,
+		paddingRight: 0
+		// flex: '1 0 auto'
 	}
 }
 
@@ -67,10 +74,9 @@ class Experience extends Component {
 						Software Engineer Intern, Summer 2017
 						</Typography>
 						<Typography variant="body1" >
-						Stockmusic.net is a royalty-free music platform where thousands of users go to purchase music for commercials, business presentations, and those alike. 
-						Working primarily on the backend, I wrote many PHP artisan commands that served the purpose of shortening the workload to access and manipulate data in 
+						Backend work in PHP, writing artisan commands that served the purpose of shortening the workload to access and manipulate data in 
 						the database. This included commands to automatically transcode original music with the watermark tracks, retrieve details of a specific track, 
-						and retrieve customer information all with certain specifications.
+						and retrieve customer information, each with certain specifications.
 						</Typography>
 					</CardContent>
 					</div>
@@ -78,12 +84,13 @@ class Experience extends Component {
 				<Card className="jobcard" style={style.jobcard}>
 					<div style={style.detail} >
 					<CardMedia>
-						<img style={style.img} src={require("../Images/stockmusic.png")} alt="microsoft logo" />
+						<img style={style.img} src={require("../Images/microsoft.png")} alt="microsoft logo" />
 					</CardMedia>
-					<CardContent>
-						<Typography variant="headline" component="h1">
+					<CardContent style={style.content} >
+						<Typography variant="headline" component="h1" >
 						Escalation Quality Analyst, Summer 2016
 						</Typography>
+						<br />
 						<Typography variant="body1">
 						Description
 						</Typography>
