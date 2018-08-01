@@ -37,7 +37,7 @@ class AltIntroduction extends Component {
     				</Typography>*/}
     			</div>
     			<div className="rightHalf" >
-    				
+    				<p>hello</p>
     			</div>
     			{/*</Paper>*/}
 			</div>
