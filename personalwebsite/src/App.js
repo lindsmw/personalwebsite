@@ -16,17 +16,21 @@ const theme = createMuiTheme({
   }
 });
 
+// const style = {
+//   position: 'absolute'
+// }
+
 class App extends Component {
   render() {
     return (
       <div>
         <MuiThemeProvider theme={theme}>
-        <NavBar />
-        <br />
+        {/*<NavBar />
+        <br />*/}
         <AltIntroduction />
-        <br />
-        <Profile />
-        <br />
+        {/*<br />*/}
+        {/*<Profile />
+        <br />*/}
         <Experience />
         </MuiThemeProvider>
       </div>
