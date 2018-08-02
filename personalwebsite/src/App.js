@@ -22,8 +22,8 @@ class App extends Component {
       <div>
         <MuiThemeProvider theme={theme}>
         <NavBar />
-        <br />
-        <AltIntroduction />
+        {/*<br />
+        <AltIntroduction />*/}
         <br />
         <Profile />
         <br />

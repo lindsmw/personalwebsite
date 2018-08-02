@@ -28,7 +28,7 @@ const style = {
 		width: 'auto'
 	},
 	paper: {
-		width: 'auto', 
+		width: '100%', 
 		height: 'auto', 
 		padding: 20, 
 		display: 'inline-block',

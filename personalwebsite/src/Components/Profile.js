@@ -12,7 +12,8 @@ const style = {
 		position: 'center',
 		display: 'inline-block',
 		borderRadius: '50%',
-		overflow:'hidden'
+		overflow:'hidden',
+		border: '4px solid white'
 	},
 	paragraphs: {
 		display: 'flex',
