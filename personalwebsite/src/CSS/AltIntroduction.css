@@ -18,16 +18,6 @@
 	/*box-shadow: 10px;*/
 }
 
-/*.random {
-	//position: absolute;
-	border: 2px solid black;
-	//height: 100%;
-	text-align: center;
-	//height: 50%;
-	background-color: orange;
-	vertical-align: middle;
-}*/
-
 .intro {
 	/*position: absolute;*/
 	text-align: center;
@@ -35,45 +25,42 @@
 }
 
 .rightHalf {
-	/*position: absolute;*/
 	width: 50%;
-	/*display: inline;*/
-	/*border: 2px solid black;*/
+	height: 100%;
+	position: absolute;
 	float: right;
 	background-color: pink;
-	/*right: 0px;*/
+	transform: translate(100%, 0%);
+	vertical-align: middle;
+	overflow: scroll;
 }
 
 .textContainer {
-	/*display: inline;*/
-	/*margin-top: 6px;*/
-	/*margin-left: 100px;*/
 	height: 50%;
-	width: 50%;
-	/*border: 3px solid black;*/
-	/*margin: 0;*/
-    position: absolute;
+	width: 100%;
+    position: relative;
     top: 50%;
-    /*left: 50%;*/
-    transform: translate(100%, -100%);
+    transform: translate(0%, -100%);
     vertical-align: middle;
     background-color: orange;
 
 }
 
 .textContainer2 {
-	/*display: inline;*/
-	/*margin-bottom: 6px;*/
-	/*margin-left: -6px;*/
 	height: 50%;
-	width: 50%;
-	/*border: 3px solid black;*/
-	/*margin: 0;*/
+	width: 100%;
     position: absolute;
     top: 50%;
-    /*left: 50%;*/
-    transform: translate(100%, 0%);
     vertical-align: middle;
     background-color: pink;
-
 }
+
+.textContainer3 {
+	height: 'auto';
+	width: 100%;
+	position: absolute;
+	top: 100%;
+	vertical-align: middle;
+	background-color: lightyellow;
+}
+

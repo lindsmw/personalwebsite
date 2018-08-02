@@ -6,44 +6,41 @@ import { withStyles } from '@material-ui/core/styles';
 const style = {
 	jobcard: {
 		// maxWidth:710,
-		width: '46%',
+		// width: '46%',
 		height: 'auto',
-		marginTop: '1%',
-		marginLeft: '1%',
-		marginRight: '1%',
-		marginBottom: '1%',
+		margin: '5%',
 		padding: '1%',
-		display: 'inline-block',
+		// display: 'inline-block',
 		// background:'#E0F2F1',
 		verticalAlign: 'top',
 		raised: true, 
 	},
-	projectcard: {
+	/*projectcard: {
 		maxWidth: 300,
 		height: 'auto',
 		margin: 35,
 		padding: 20,
 		display: 'inline-block'
-	},
+	},*/
 	detail: {
 		display: 'flex'
 	},
 	img: {
-		height: 250,
-		width: 'auto'
+		height: 'auto',
+		width: '40%'
 	},
 	paper: {
 		width: 'auto', 
 		height: 'auto', 
-		padding: 20, 
+		padding: 0, 
 		display: 'inline-block',
 		// background: '#E0F2F1'
 	},
-	display3: {
-		padding: 10,
-		textAlign: 'center',
-		borderBottom: '1px solid black',
-		marginTop: '1%'
+	display1: {
+		paddingLeft: '5%',
+		textAlign: 'left',
+		// marginTop: '1%'
+		paddingTop: '10%',
 	},
 	/*media: {
 		width: 400,
@@ -57,7 +54,7 @@ const style = {
 		// flex: '1 0 auto'
 	},
 	type: {
-		width:'100%'
+		// width:'100%'
 	}
 }
 
@@ -75,10 +72,8 @@ class Experience extends Component {
 
 		return(
 			<div className="jobContainer">
-			{/*<GridList className={"backgroundGrid"} cellHeight={500} rows={2}>
-				<GridListTile >*/}
-			  <Paper style={style.paper} square={true} className="experiencePaper" elevation={3}>
-			  	<Typography variant="display3" component="h1" style={style.display3}>
+			  {/*<Paper style={style.paper} square={true} className="experiencePaper" elevation={3}>*/}
+			  	<Typography variant="display1" component="h1" style={style.display1}>
           			Work Experience
         		</Typography>
 				<Card className="jobcard" style={style.jobcard}>
@@ -114,18 +109,7 @@ class Experience extends Component {
 						</CardContent>
 					</div>
 				</Card>
-				{/*</GridListTile>
-				<GridListTile>*/}
-				{/*<Card >
-					<CardContent>
-						<Typography variant="headline" component="h2">
-						Background 2
-						</Typography>
-					</CardContent>
-				</Card>*/}
-				{/*</GridListTile>
-			</GridList>*/}
-				<Typography variant="display3" component="h1" style={style.display3}>
+				{/*<Typography variant="display3" component="h1" style={style.display3}>
 					Projects
 				</Typography>
 				<Card className="projectcard" style={style.projectcard}>
@@ -147,8 +131,8 @@ class Experience extends Component {
 						NinjaTrader Automation Software
 						</Typography>
 					</CardContent>
-				</Card>
-			</Paper>
+				</Card>*/}
+			{/*</Paper>*/}
 			</div>
 		)
 	}
